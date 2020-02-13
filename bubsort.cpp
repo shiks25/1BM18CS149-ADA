@@ -17,7 +17,7 @@ void bubblesort(int arr[],int n)
 		}
 	}
 	for(int i=0;i<n;i++)
-		cout<<arr[i]<<",";
+		cout<<arr[i]<<"  ";
 }
 
 int main()
@@ -41,4 +41,20 @@ int main()
    
 	return 0;
 }
+/*
+OUTPUT:
+run1:
+Enter number of elements in the array
+4
+Enter the elements
+30 -50 7 9
+-50 7 9 30 Time taken by this program is : 0.000016 sec 
+run2:
+Enter number of elements in the array
+10
+Enter the elements
+23 -9 -90 35 6 2 0 3 1 8
+-90 -9 0 1  2 3 6 8 23  35 Time taken by this program is : 0.000017 sec 
+*/
+
 
