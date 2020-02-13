@@ -34,6 +34,16 @@ int n,k;
 		bubblesort(arr,n,k);
 		return 0;
 		}
+/*
+OUTPUT:
+Enter number of elements in the array
+5
+Enter the elements
+3 9 -9 4 2
+Enter the value of k
+3
+9 4 3 
+*/
 		
 	
  
