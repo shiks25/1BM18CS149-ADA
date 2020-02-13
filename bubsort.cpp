@@ -56,10 +56,7 @@ Enter number of elements in the array
 Enter the elements
 23 -9 -90 35 6 2 0 3 1 8
 -90 -9 0 1  2 3 6 8 23  35 Time taken by this program is : 0.000017 sec 
-run3(rand() input):
-Enter number of elements in the array
-5
-846930886 1681692777 1714636915	1804289383 1957747793 Time taken by this program is : 0.000012 sec 
+
 */
 
 
