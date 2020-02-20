@@ -14,12 +14,11 @@ void selectionsort(int arr[],int n)
 				min=j;
 			}
 		}
-		if(arr[i]!=arr[min]) //
-		{
+		
 		temp=arr[i];
 		arr[i]=arr[min];
 		arr[min]=temp;
-		}
+		
 	}
 }
 int main()
@@ -46,3 +45,23 @@ int main()
 	return 0;
 		
 }
+/*output :
+
+run1:
+Enter number of elements in an array
+5
+Enter the array elements
+the sorted elements are
+846930886	1681692777	1714636915	1804289383	1957747793	
+Time taken by program is : 0.000003 sec 
+
+run2:
+Enter number of elements in an array
+10
+Enter the array elements
+the sorted elements are
+424238335	596516649	719885386	846930886	1189641421	1649760492	1681692777	1714636915	1804289383	1957747793	
+Time taken by program is : 0.000004 sec 
+*/
+
+
