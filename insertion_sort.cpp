@@ -1,3 +1,4 @@
+//Sort a given set of N integer elements using Insertion Sort technique and compute its time taken.
 void insertionSort(int arr[], int n)  
 {  
     int i, key, j;  
@@ -5,11 +6,7 @@ void insertionSort(int arr[], int n)
     {  
         key = arr[i];  
         j = i - 1;  
-  
-        /* Move elements of arr[0..i-1], that are  
-        greater than key, to one position ahead  
-        of their current position */
-        while (j >= 0 && arr[j] > key) 
+         while (j >= 0 && arr[j] > key) 
         {  
             arr[j + 1] = arr[j];  
             j = j - 1;  
@@ -28,7 +25,7 @@ int main()
 	for(int i=0;i<n;i++)
 		cin>>arr[i];
 	start = clock(); 
-	insertionsort(arr,n);
+	insertionSort(arr,n);
 	end = clock(); 
    cout <<"the sorted elements are\n";
     for(int i=0;i<n;i++)
