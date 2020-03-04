@@ -1,5 +1,7 @@
 //Sort a given set of N integer elements using Insertion Sort technique and compute its time taken.
-#include<iosteam>
+#include<iostream>
+#include <bits/stdc++.h>
+using namespace std;
 void insertionSort(int arr[], int n)  
 {  
     int i, key, j;  
@@ -39,3 +41,18 @@ int main()
 	return 0;
 		
 }
+/*output:(using rand function)
+1)
+131176229       1189641421      1303455736      1315634022      1350490027                                                   
+1365180540       1369133069      1540383426      1649760492      1653377373                                                   
+1656478042       1681692777      1714636915      1726956429      1734575198                                                   
+1801979802       1804289383      1914544919      1957747793      1967513926                                                   
+973594324       2038664370      2044897763      2089018456      2145174067                                                    
+Time taken by program is : 0.000008 sec  
+2)
+1734575198       1749698586      1780695788      1801979802      1804289383                                                   
+1827336327       1843993368      1889947178      1911759956      1914544919                                                   
+1918502651       1937477084      1956297539      1957747793      1967513926                                                   
+2973594324       1984210012      1998898814      2001100545      2038664370                                                   
+044897763       2053999932      2084420925      2089018456      2145174067                                                    
+Time taken by program is : 0.000015 sec   */
