@@ -57,7 +57,7 @@ int main()
 		}
 	}
 	cout<<"Max no.of meetings are : "<<s+1<<endl;
-	cout<<"The meeting numbers in order are : ";
+	cout<<"The meeting numbers after sorting are : ";
 	for(int i=0;i<=s;i++)
 		cout<<p[i]<<" ";
 	cout<<"\n";
