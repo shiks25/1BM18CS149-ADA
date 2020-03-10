@@ -1,5 +1,4 @@
-/*a)Check whether a given graph is connected or not using DFS method.
-  b) Using DFS, find if there are cycles in a given graph.*/
+/*Check whether a given graph is connected or not using DFS method.*/
 #include<iostream>
 using namespace std;
 int a[30][30],reach[30],n;
