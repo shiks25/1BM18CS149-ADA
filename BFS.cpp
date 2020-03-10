@@ -1,7 +1,7 @@
 //Write program to print all the nodes reachable from a given starting node in a digraph using BFS method.
 #include<bits/stdc++.h>
 using namespace std;
-int a[30][30],q[20],visited[30],r=-1,f=0,i,j,n; 
+int a[30][30],q[30],visited[30],r=-1,f=0,i,j,n; 
 void bfs(int v){ 
          for(i=1;i<=n;i++) 
                 if(a[v][i] && !visited[i]) 
