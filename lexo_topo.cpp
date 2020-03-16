@@ -2,7 +2,7 @@
 smallest topological ordering of the graph if it exists otherwise print -1 (if the graph has cycles).*/
 #include<bits/stdc++.h>
 using namespace std;
-stack<int> s;
+
 int n,a[30][30],q[30],f=0,r=-1;
 void lexotopo()
 {
@@ -65,3 +65,16 @@ int main()
 	lexotopo();
 	return 0;
 }
+/*output
+Enter the no of vertices                                                                                                      
+6                                                                                                                             
+Enter the adjacency matrix                                                                                                    
+0 0 0 1 0 0                                                                                                                   
+0 0 0 1 0 1                                                                                                                   
+0 0 0 0 0 1   
+0 0 0 0 1 0                                                                                                                   
+0 0 0 0 0 0                                                                                                                   
+0 0 0 0 1 0                                                                                                                   
+lexicographically smallest topological ordering is 
+0 1 2 3 5 4 
+*/
