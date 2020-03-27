@@ -1,4 +1,4 @@
-/*Implement All Pair Shortest paths problem using Floyd’s algorithm.*/
+/*Implement All Pair Shortest paths problem using Floydâ€™s algorithm.*/
 
 #include <bits/stdc++.h>
 //#define INF 1000
@@ -27,7 +27,7 @@ int main(){
     cout<<"The shortest path between every pair of vertices is:"<<endl;
     for(int i=1;i<=n;i++){
         for(int j=1;j<=n;j++){
-                if(a[i][j]==1000){cout<<"inf ";}
+                
             cout<<a[i][j]<<" ";
         }
         cout<<endl;
