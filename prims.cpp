@@ -21,7 +21,7 @@ for(int count=1;count<n;count++){
     }
     cost+=key[index2];
     visited[index2]=1;
-   cout<<index2<<" -> "<<index2<<endl;
+   cout<<index1<<" -> "<<index2<<endl;
 
    index1=index2;
 }
