@@ -1,4 +1,4 @@
-/*Find Minimum Cost Spanning Tree of a given undirected graph using Prim’s algorithm.*/
+/*Find Minimum Cost Spanning Tree of a given undirected graph using Primâ€™s algorithm.*/
 #include<iostream>
 using namespace std;
 int adj[100][100],n,key[100],visited[100],cost=0;
@@ -21,7 +21,7 @@ for(int count=1;count<n;count++){
     }
     cost+=key[index2];
     visited[index2]=1;
-   cout<<index1<<" -> "<<index2<<endl;
+   cout<<index2<<" -> "<<index2<<endl;
 
    index1=index2;
 }
@@ -40,24 +40,28 @@ int main(){
         }
     }
 
-    cout<<"Minimum spanning tree is :"<<endl;
+    cout<<"Minimum spanning tree is:"<<endl;
     minCost(key,visited);
     cout<<"The cost of MST is: "<< cost<<endl;
     return 0;
 }
 /*output:
 enter the num of vertices:
-5
+7
 enter the adjacency matrix (enter 9999 for infinity) :
-0 5 7 9999 2
-5 0 9999 6 3
-7 9999 0 4 4
-9999 6 4 0 5
-2 3 4 5 0
+0 28 9999 9999 9999 10 9999
+28 0 16 9999 9999 9999 14
+9999 16 0 12 9999 9999 9999
+9999 9999 12 0 22 9999 18
+9999 9999 9999 22 0 25 24
+10 9999 9999 9999 25 0 9999
+9999 14 9999 18 24 9999 0
 Minimum spanning tree is :
-1 -> 5
-5 -> 2
-5 -> 3
-3 -> 4
-The cost of MST is: 13
+1 -> 6
+6 -> 5
+5 -> 4
+4 -> 3
+3 -> 2
+2 -> 7
+The cost of MST is: 99
 */
