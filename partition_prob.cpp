@@ -9,7 +9,9 @@ int partition(int arr[], int n, int sum)
         return 1;
     else if (n == 0 )
         return 0;
-
+    if(arr[n-1]>sum){
+        return 0;
+    }
     return partition(arr, n-1, sum)||partition (arr, n-1, sum-arr[n-1]);
 }
 int main(){
