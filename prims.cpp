@@ -40,7 +40,7 @@ int main(){
         }
     }
 
-    cout<<"Minimum spanning tree is:"<<endl;
+    cout<<"Minimum spanning tree is (selection of vertices) :"<<endl;
     minCost(key,visited);
     cout<<"The cost of MST is: "<< cost<<endl;
     return 0;
@@ -56,7 +56,7 @@ enter the adjacency matrix (enter 9999 for infinity) :
 9999 9999 9999 22 0 25 24
 10 9999 9999 9999 25 0 9999
 9999 14 9999 18 24 9999 0
-Minimum spanning tree is :
+Minimum spanning tree is (selection of vertices) :
 1 -> 6
 6 -> 5
 5 -> 4
