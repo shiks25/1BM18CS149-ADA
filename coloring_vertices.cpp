@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std;
 int g[30][30];
-bool isSafe (int v, int g[][30], int color[], int c,int n)
+bool yes(int v, int g[][30], int color[], int c,int n)
 {
     for (int i = 0; i < n; i++)
         if (g[v][i] && c == color[i])
@@ -17,7 +17,7 @@ bool graphColor(int g[][30], int m, int color[], int v,int n)
     for (int c = 1; c <= m; c++)
     {
 
-        if (isSafe(v, g, color, c,n))
+        if (yes(v, g, color, c,n))
         {
            color[v] = c;
              if (graphColor(g, m, color, v+1,n) == true)
