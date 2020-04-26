@@ -8,7 +8,7 @@ bool dfs_cycle(int v){
     vis.push_back(v);
     reach[v]=1;
     for(int i=0;i<n;i++){
-        if(a[v][i] && !reach[i]){
+        if(a[v][i] && !reach[i]){     //for undirected graph just check if visited[i]>1
             
             dfs_cycle(i);
         }
